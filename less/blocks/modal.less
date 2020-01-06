@@ -1,0 +1,69 @@
+.modal {
+  .title-2 {
+    padding-left: 25px;
+    font-size: 30px;
+    
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 12px;
+    }
+  }
+  
+  &--click {
+    .modal__form {
+      width: 300px;
+      max-width: 100%;
+    }
+  }
+}
+
+.modal__form {
+  width: 250px;
+}
+
+.modal__comment {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  
+  span {
+    color: @red;
+  }
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  border: 1px solid rgba(51,51,51,0.5);
+  border-radius: 5px;
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.modal__link {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.modal__btn {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  
+  span {
+    color: @red;
+  }
+}

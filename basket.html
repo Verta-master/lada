@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>amc1.ru</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <a href="index.html" class="logo">
+          <img src="img/logo-dark.svg" alt="Logo" width="301" height="58">
+        </a>
+        <div class="header__contacts">
+          <a href="tel:+74957605262" class="phone">8 495 760-52-62</a>
+          <a href="mailto:amc@amc1.ru" class="mail">amc@amc1.ru</a>
+        </div>
+        <div class="header__user">
+          <a data-fancybox data-src="#call" href="javascript:;" class="header__login">Вход</a>
+          <a href="#" class="header__cart header__cart--full">1500 &#8381;</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="menu">
+          <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="gallery.html" class="menu__link">ГАЛЕРЕЯ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">ПРОИЗВОДСТВО ПРИБОРОВ</a>
+            </li>
+            <li class="menu__item">
+              <a href="shop.html" class="menu__link">МАГАЗИН</a>
+            </li>
+            <li class="menu__item">
+              <a href="news.html" class="menu__link">НОВОСТИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="delivery.html" class="menu__link">ДОСТАВКА И ОПЛАТА</a>
+            </li>
+            <li class="menu__item">
+              <a href="contacts.html" class="menu__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" method="get" class="search">
+          <input type="text" name="search" class="search__input" placeholder="Поиск">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="cart wrapper">
+      <h1 class="title-2">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+      <div class="cart__steps">
+        <p class="cart__step cart__step--active">Редактировать заказ</p>
+        <p class="cart__step">Личные данные</p>
+      </div>
+      
+      <form action="#" method="post" class="cart__form">
+        <ul class="cart__list">
+          <li class="cart__item cart__item--header">
+            <p class="cart__name">Наименование товара</p>
+            <p class="cart__price">Цена</p>
+            <p class="cart__number">Количество</p>
+            <p class="cart__total">Сумма</p>
+          </li>
+          <li class="cart__item">
+            <figure class="cart__img">
+              <a href="#"><img src="img/1134_shkaly-priborov-dlya-moto.gif" alt="MERCEDES-BENZ W124" width="300" height="156"></a>
+            </figure>
+            <p class="cart__name"><a href="#">MERCEDES-BENZ W124</a></p>
+            <p class="cart__price"><span>Цена</span>8000 &#8381;</p>
+            <div class="cart__number">
+              <span>Количество</span>
+              <p class="cart__field">
+                <button type="button" class="cart__change">+</button>
+                <input type="text" class="cart__change" value="2">
+                <button type="button" class="cart__change">-</button>
+              </p>
+            </div>
+            <p class="cart__total"><span>Сумма</span>8000 &#8381;</p>
+            <p class="cart__remove">
+              <button type="button" class="cart__btn"><span>Удалить</span></button>
+            </p>
+          </li>
+          <li class="cart__item">
+            <figure class="cart__img">
+              <a href="#"><img src="img/1134_shkaly-priborov-dlya-moto.gif" alt="MERCEDES-BENZ W124" width="300" height="156"></a>
+            </figure>
+            <p class="cart__name"><a href="#">MERCEDES-BENZ W124</a></p>
+            <p class="cart__price"><span>Цена</span>8000 &#8381;</p>
+            <div class="cart__number">
+              <span>Количество</span>
+              <p class="cart__field">
+                <button type="button" class="cart__change">+</button>
+                <input type="text" class="cart__change" value="2">
+                <button type="button" class="cart__change">-</button>
+              </p>
+            </div>
+            <p class="cart__total"><span>Сумма</span>8000 &#8381;</p>
+            <p class="cart__remove">
+              <button type="button" class="cart__btn"><span>Удалить</span></button>
+            </p>
+          </li>
+        </ul>
+        <p class="cart__sum">Итого:<span>8000 &#8381;</span></p>
+        
+        <div class="cart__btns">
+          <a href="#" class="btn cart__more">Назад</a>
+          <a href="#" class="btn cart__more">Далее</a>
+        </div>
+        <p class="cart__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+        
+      <!--  Fields for step 2 / remove comments   -->
+<!--
+        <label for="person" class="review__label">ФИО или название компании<span>*</span></label>
+        <input type="text" id="person" class="review__input" required>
+        <label for="email" class="review__label">E-mail<span>*</span></label>
+        <input type="email" id="email" class="review__input" required>
+        <label for="phones" class="review__label">Контактные телефоны (с кодом города)<span>*</span></label>
+        <input type="tel" id="phones" class="review__input" required>
+        <label for="index" class="review__label">Индекс</label>
+        <input type="text" id="index" class="review__input">
+        <label for="city" class="review__label">Город</label>
+        <input type="text" id="city" class="review__input">
+        <label for="street" class="review__label">Улица, проспект и пр.</label>
+        <input type="text" id="street" class="review__input">
+        <label for="house" class="review__label">Номер дома</label>
+        <input type="text" id="house" class="review__input">
+        <label for="building" class="review__label">Корпус</label>
+        <input type="text" id="building" class="review__input">
+        <label for="flat" class="review__label">Квартира, офис</label>
+        <input type="text" id="flat" class="review__input">
+        <label for="add" class="review__label">Дополнительно</label>
+        <textarea id="add" class="review__message"></textarea>
+-->
+      </form>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li><a href="#">Галерея работ</a></li>
+            <li><a href="#">Производство приборов</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__menu">
+          <ul class="footer__list">
+            <li><a href="#">Реквизиты</a></li>
+            <li><a href="#">Декларация -EAC-</a></li>
+            <li><a href="#">Документация на продукцию</a></li>
+            <li><a href="#">Гарантия на продукцию</a></li>
+            <li><a href="#">Сервисный центр</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <p class="footer__title">Свяжитесь с нами</p>
+          <a href="tel:+74957605262" class="phone">8 495 760-52-62</a>
+          <a href="mailto:amc@amc1.ru" class="mail">amc@amc1.ru</a>
+          <ul class="social social--footer">
+            <li class="social__item">
+              <a href="#"><img src="img/facebook-logo.svg" alt="Facebook" width="20" height="20"></a>
+            </li>
+            <li class="social__item">
+              <a href="#"><img src="img/instagram-logo.svg" alt="Instagram" width="20" height="20"></a>
+            </li>
+            <li class="social__item">
+              <a href="#"><img src="img/youtube-play.svg" alt="Youtube" width="20" height="20"></a>
+            </li>
+            <li class="social__item">
+              <a href="#"><img src="img/vk-logo.svg" alt="VKontakte" width="20" height="20"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 1997 - 2018 гг. ООО"АМС-Аметист"</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-2">АВТОРИЗАЦИЯ</p>
+    <form action="#" method="post" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Имя пользователя">
+      <input type="password" class="modal__input" placeholder="Пароль">
+      <a href="#" class="modal__link">Забыли пароль?</a>
+      <button type="submit" class="btn modal__btn">ВОЙТИ</button>
+      <p class="modal__comment">Если у вас нет аккаунта, <a href="#">зарегистрируйтесь</a></p>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>

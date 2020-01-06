@@ -1,0 +1,124 @@
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+  .list li {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.contacts__block {
+  width: 45%;
+  margin-bottom: 80px;
+  .blockpad();
+  padding-top: 25px;
+  padding-left: 55px;
+  
+  .title-2 {
+    margin-left: -20px;
+    margin-bottom: 5px;
+  }
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 35px;
+  margin-top: 25px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 38px;
+    top: 5px;
+    left: 0;
+    background-image: url(../img/smartphone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+}
+
+.contacts__viber {
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+  }
+  
+  &::before {
+    top: 0;
+    left: 145px;
+    background-image: url(../img/whatsapp.svg);
+  }
+  
+  &::after {
+    top: 2px;
+    left: 175px;
+    background-image: url(../img/viber.svg);
+  }
+}
+
+.contacts__mail {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 30px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 0;
+    left: 2px;
+    background-image: url(../img/message.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.contacts__data {
+  width: 100%;
+  .blockpad();
+  
+  .title-2 {
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  tr {
+    height: 50px;
+    border-bottom: 1px solid rgba(51,51,51,0.5);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  td:first-child {
+    width: 32%;
+  }
+}
