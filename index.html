@@ -90,23 +90,33 @@
       <button type="button" class="menu__btn"></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">Магазин</a>
-          <ul class="menu__sublist">
-            <li class="menu__subitem"><a href="#">Приборные панели</a></li>
-            <li class="menu__subitem"><a href="#">Колеса и диски</a></li>
-            <li class="menu__subitem"><a href="#">Чехлы</a></li>
-            <li class="menu__subitem"><a href="#">Багажные системы</a></li>
-            <li class="menu__subitem"><a href="#">Сигнализация</a></li>
-            <li class="menu__subitem"><a href="#">Тюнинг элементы</a></li>
-            <li class="menu__subitem"><a href="#">Аксессуары и дополнительное оборудование</a></li>
-            <li class="menu__subitem"><a href="#">Освещение и электрика</a></li>
-            <li class="menu__subitem"><a href="#">Кузов</a></li>
-            <li class="menu__subitem"><a href="#">Салон</a></li>
-            <li class="menu__subitem"><a href="#">Расходные материалы</a></li>
-            <li class="menu__subitem"><a href="#">Система выхлопа</a></li>
-            <li class="menu__subitem"><a href="#">Система охлаждения</a></li>
-            <li class="menu__subitem"><a href="#">Тормозная система</a></li>
-          </ul>
+          <button type="button" class="menu__drop-btn"></button>
+          <a href="#" class="menu__link menu__link--catalog">
+            <svg x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+              <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03 C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/>
+              <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03 S379.58,180.455,372.939,180.455z"/>
+              <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909 c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/>
+            </svg>
+            <span>Магазин</span>
+          </a>
+          <div class="menu__drop">
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Приборные панели</a></li>
+              <li class="menu__subitem"><a href="#">Колеса и диски</a></li>
+              <li class="menu__subitem"><a href="#">Чехлы</a></li>
+              <li class="menu__subitem"><a href="#">Багажные системы</a></li>
+              <li class="menu__subitem"><a href="#">Сигнализация</a></li>
+              <li class="menu__subitem"><a href="#">Тюнинг элементы</a></li>
+              <li class="menu__subitem"><a href="#">Освещение и электрика</a></li>
+              <li class="menu__subitem"><a href="#">Кузов</a></li>
+              <li class="menu__subitem"><a href="#">Салон</a></li>
+              <li class="menu__subitem"><a href="#">Расходные материалы</a></li>
+              <li class="menu__subitem"><a href="#">Система выхлопа</a></li>
+              <li class="menu__subitem"><a href="#">Система охлаждения</a></li>
+              <li class="menu__subitem"><a href="#">Тормозная система</a></li>
+              <li class="menu__subitem"><a href="#">Аксессуары и дополнительное оборудование</a></li>
+            </ul>
+          </div>
         </li>
         <li class="menu__item menu__item--active">
           <a href="#" class="menu__link">Оплата</a>
@@ -138,38 +148,40 @@
   <main>
     <section class="promo">
       <div class="promo__wrap">
-        <div class="swiper-container promo__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide promo__slide">
-              <a href="#" class="promo__link" style="background-image:url('img/images/img-3.jpg');">
-                <p class="promo__category promo__category--big">Приборные панели</p>
-              </a>
+        <div class="promo__slider-block">
+          <div class="swiper-container promo__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__link" style="background-image:url('img/images/img-3.jpg');">
+                  <p class="promo__category promo__category--big">Приборные панели</p>
+                </a>
+              </div>
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__link" style="background-image:url('img/images/img-4.jpg');">
+                  <p class="promo__category promo__category--big">Багажные системы</p>
+                </a>
+              </div>
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__link" style="background-image:url('img/images/img-5.jpg');">
+                  <p class="promo__category promo__category--big">Сигнализация</p>
+                </a>
+              </div>
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__link" style="background-image:url('img/images/img-6.jpg');">
+                  <p class="promo__category promo__category--big">Освещение и электрика</p>
+                </a>
+              </div>
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__link" style="background-image:url('img/images/img-7.jpg');">
+                  <p class="promo__category promo__category--big">Салон</p>
+                </a>
+              </div>
             </div>
-            <div class="swiper-slide promo__slide">
-              <a href="#" class="promo__link" style="background-image:url('img/images/img-4.jpg');">
-                <p class="promo__category promo__category--big">Багажные системы</p>
-              </a>
+            <div class="promo__control">
+              <div class="swiper-button-prev promo__prev"></div>
+              <div class="swiper-pagination promo__pagination"></div>
+              <div class="swiper-button-next promo__next"></div>
             </div>
-            <div class="swiper-slide promo__slide">
-              <a href="#" class="promo__link" style="background-image:url('img/images/img-5.jpg');">
-                <p class="promo__category promo__category--big">Сигнализация</p>
-              </a>
-            </div>
-            <div class="swiper-slide promo__slide">
-              <a href="#" class="promo__link" style="background-image:url('img/images/img-6.jpg');">
-                <p class="promo__category promo__category--big">Освещение и электрика</p>
-              </a>
-            </div>
-            <div class="swiper-slide promo__slide">
-              <a href="#" class="promo__link" style="background-image:url('img/images/img-7.jpg');">
-                <p class="promo__category promo__category--big">Салон</p>
-              </a>
-            </div>
-          </div>
-          <div class="promo__control">
-            <div class="swiper-button-prev promo__prev"></div>
-            <div class="swiper-pagination promo__pagination"></div>
-            <div class="swiper-button-next promo__next"></div>
           </div>
         </div>
         

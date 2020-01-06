@@ -20,6 +20,7 @@
   align-items: center;
 }
 
+.menu__drop-btn,
 .menu__btn {
   display: none;
 }
@@ -34,8 +35,6 @@
 
 .menu__item {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-right: 40px;
   .transition();
   
@@ -55,29 +54,89 @@
   &:hover,
   &:active,
   &--active {
-    color: @blue;
-    .transition();
-    
     &::before {
       opacity: 1;
       width: 100%;
       .transition();
     }
+    
+    .menu__link {
+      color: @blue;
+      .transition();
+    }
+    
+    .menu__link--catalog svg {
+      fill: @blue;
+      .transition();
+    }
+  }
+  
+  &:hover .menu__drop {
+    display: block;
   }
 }
 
 .menu__link {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1;
+  line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: none;
+  .transition();
+  
+  &--catalog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      fill: #202020;
+      .transition();
+    }
+  }
+}
+
+.menu__drop {
+  display: none;
 }
 
 .menu__sublist {
-  display: none;
   .reset();
+  list-style: none;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1180px;
+  padding: 20px 35px;
   background-color: #fff;
+  border-top: 1px solid @blue;
+  border-bottom: 1px solid @blue;
+}
+
+.menu__subitem {
+  width: 25%;
+  padding: 10px;
+  padding-left: 0;
+  font-size: 16px;
+  
+  a {
+    text-decoration: none;
+  }
+  
+  &:hover a,
+  &:active a {
+    color: @blue;
+    text-decoration: underline;
+  }
 }
