@@ -1576,6 +1576,10 @@ h3,
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #f5f5f5;
+  background-image: url(../img/images/car.png);
+  background-repeat: no-repeat;
+  background-position: top -50px left;
+  overflow: hidden;
 }
 .about .title-2 {
   margin-top: 0;
@@ -3809,6 +3813,11 @@ input.cart__change {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1800px) {
+  .about {
+    background-image: none;
+  }
 }
 @media (max-width: 1210px) {
   .wrapper {
