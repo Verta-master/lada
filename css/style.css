@@ -743,14 +743,14 @@ h3,
 }
 .logo img {
   display: block;
-  width: 115px;
+  width: 140px;
   height: auto;
   margin-right: 15px;
 }
 .logo__text {
-  min-width: 260px;
+  min-width: 305px;
   font-family: "Arial", sans-serif;
-  color: #727271;
+  color: #939393;
   line-height: 1;
   font-weight: 500;
   text-align: center;
@@ -758,13 +758,14 @@ h3,
 .logo__text b {
   display: block;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 30px;
 }
 .logo__text strong {
   display: block;
-  font-size: 13px;
+  padding-left: 2px;
+  font-size: 15px;
   letter-spacing: 0.16em;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .header__line {
   display: -webkit-box;
@@ -3962,6 +3963,19 @@ input.cart__change {
   .news__item {
     margin-right: 0;
   }
+  .logo img {
+    width: 115px;
+    height: auto;
+  }
+  .logo__text {
+    min-width: auto;
+  }
+  .logo__text b {
+    font-size: 26px;
+  }
+  .logo__text strong {
+    font-size: 13px;
+  }
 }
 @media (max-width: 1022px) {
   .contacts__wrap {
@@ -4476,7 +4490,7 @@ input.cart__change {
   }
   .logo__text strong {
     font-size: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.09em;
   }
   .logo img {
     width: 80px;
