@@ -30,7 +30,8 @@
   padding-left: 80px;
   
   .title-2 {
-    margin-left: -60px;
+    margin-left: -40px;
+    margin-top: 0;
     margin-bottom: 25px;
   }
 }
@@ -68,15 +69,12 @@
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  margin-right: -20px;
 }
 
 .auto__figure {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  margin-right: 20px;
+  margin-bottom: 20px;
   
   a {
     width: 260px;
@@ -86,12 +84,11 @@
     align-items: center;
     overflow: hidden;
   }
+  
   img {
     display: block;
-    height: 100%;
-    width: auto;
-    max-width: none;
-    object-fit: cover;
+    flex: 0 0 auto;
+    max-height: 100%;
     .transition();
   }
   

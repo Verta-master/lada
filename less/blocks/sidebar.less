@@ -3,13 +3,14 @@
   margin-bottom: 50px;
   padding: 20px;
   background-color: #f6f6f6;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .sidebar__title {
   margin-top: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 500;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -23,18 +24,19 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding-right: 20px;
   text-decoration: none;
   .transition();
   
   &:hover,
   &:active {
-    color: @red;
+    color: @blue;
     .transition();
     
     &::after {
-      background-image: url(../img/next-red.svg);
+      background-image: url(../img/icons/next-blue.svg);
     }
   }
   
@@ -45,7 +47,7 @@
     right: 0;
     width: 10px;
     height: 10px;
-    background-image: url(../img/next-grey.svg);
+    background-image: url(../img/icons/next-grey.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -88,7 +90,7 @@
     display: none;
     content: "\2714";
     position: absolute;
-    top: -5px;
+    top: -2px;
     left: 13px;
     font-size: 20px;
   }

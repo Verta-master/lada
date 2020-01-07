@@ -30,7 +30,7 @@
     
   &:hover,
   &:active {
-    color: @red;
+    color: @blue;
   }
 }
 
@@ -70,13 +70,13 @@
   
   &:hover,
   &:active {
-    color: @red;
+    color: @blue;
   }
   
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 0;
     width: 15px;
     height: 15px;
@@ -87,11 +87,11 @@
 }
 
 .sorting__plate-btn::before {
-  background-image: url(../img/baseline-view_module-24px.svg);
+  background-image: url(../img/icons/baseline-view_module-24px.svg);
 }
 
 .sorting__table-btn::before {
-  background-image: url(../img/baseline-view_list-24px.svg);
+  background-image: url(../img/icons/baseline-view_list-24px.svg);
 }
 
 .sorting__table-btn.sorting__active-view,

@@ -29,7 +29,7 @@
   font-weight: 500;
   
   &--active {
-    border-bottom: 2px solid @red;
+    border-bottom: 2px solid @blue;
   }
 }
 
@@ -71,15 +71,15 @@
   margin-left: auto;
   border-radius: 50%;
   border: solid 1px #e1e1e1;
-  background-image: url(../img/icon-close.svg);
-  background-size: 18px 18px;
+  background-image: url(../img/icons/cross.svg);
+  background-size: 15px 15px;
   background-position: center;
   background-repeat: no-repeat;
   
   &:hover,
   &:active {
-    border-color: @red;
-    background-image: url(../img/icon-close-red.svg);
+    border-color: red;
+//    background-image: url(../img/icon-close-red.svg);
   }
   
   span {
@@ -94,6 +94,11 @@
   
   a {
     text-decoration: none;
+  }
+  
+  &:hover,
+  &:active {
+    color: @blue;
   }
 }
 
@@ -153,7 +158,7 @@ button.cart__change {
   
   &:hover,
   &:active {
-    color: @red;
+    color: @blue;
   }
 }
 
