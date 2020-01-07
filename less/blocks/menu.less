@@ -1,5 +1,10 @@
 .menu {
   position: relative;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid @blue;
   
   &::before {
     content: "";
@@ -106,15 +111,15 @@
 
 .menu__drop {
   display: none;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
 }
 
 .menu__sublist {
   .reset();
   list-style: none;
-  position: absolute;
-  z-index: 100;
-  top: 100%;
-  left: 0;
   display: flex;
   flex-wrap: wrap;
   width: 1180px;
