@@ -60,7 +60,7 @@
               <use href="#icon-phone"></use>
             </svg>
             <a href="tel:+71234567890" class="block-phone__call">+7 123 456 78 90</a>
-            <a href="#" class="block-phone__order">Заказать звонок</a>
+            <a data-fancybox="" data-src="#order" href="javascript:;" class="block-phone__order">Заказать звонок</a>
           </div>
           <a href="mailto:email@email.ru" class="block-link block-link--mail">
             <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
@@ -90,7 +90,6 @@
       <button type="button" class="menu__btn"></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <button type="button" class="menu__drop-btn"></button>
           <a href="#" class="menu__link menu__link--catalog">
             <svg x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
               <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03 C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"></path>
@@ -99,6 +98,11 @@
             </svg>
             <span>Магазин</span>
           </a>
+          <button type="button" class="menu__drop-btn">
+            <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
+	            <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"></path>
+            </svg>
+          </button>
           <div class="menu__drop">
             <ul class="menu__sublist">
               <li class="menu__subitem"><a href="#">Приборные панели</a></li>
@@ -201,10 +205,10 @@
         <div class="product__top">
           <p class="product__title product__title--icon1">Новинки</p>
           <a href="#" class="product__link">Смотреть все</a>
-          <div class="swiper-button-prev product__prev"></div>
-          <div class="swiper-button-next product__next"></div>
+          <div class="swiper-button-prev product__prev product__prev--01"></div>
+          <div class="swiper-button-next product__next product__next--01"></div>
         </div>
-        <div class="swiper-container product__slider">
+        <div class="swiper-container product__slider product__slider--01">
           <div class="swiper-wrapper">
             <div class="swiper-slide product__slide">
               <figure class="catalog__img">
@@ -230,7 +234,7 @@
                   </div>
                   <button type="button" class="btn catalog__btn">Купить</button>
                 </div>
-                <a href="#" class="catalog__click">Купить в 1 клик</a>
+                <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
             </div>
             <div class="swiper-slide product__slide">
@@ -257,7 +261,7 @@
                   </div>
                   <button type="button" class="btn catalog__btn">Купить</button>
                 </div>
-                <a href="#" class="catalog__click">Купить в 1 клик</a>
+                <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
             </div>
             <div class="swiper-slide product__slide">
@@ -284,7 +288,7 @@
                   </div>
                   <button type="button" class="btn catalog__btn">Купить</button>
                 </div>
-                <a href="#" class="catalog__click">Купить в 1 клик</a>
+                <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
             </div>
             <div class="swiper-slide product__slide">
@@ -311,7 +315,7 @@
                   </div>
                   <button type="button" class="btn catalog__btn">Купить</button>
                 </div>
-                <a href="#" class="catalog__click">Купить в 1 клик</a>
+                <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
             </div>
             <div class="swiper-slide product__slide">
@@ -338,7 +342,7 @@
                   </div>
                   <button type="button" class="btn catalog__btn">Купить</button>
                 </div>
-                <a href="#" class="catalog__click">Купить в 1 клик</a>
+                <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
             </div>
             <div class="swiper-slide product__slide">
@@ -365,7 +369,7 @@
                   </div>
                   <button type="button" class="btn catalog__btn">Купить</button>
                 </div>
-                <a href="#" class="catalog__click">Купить в 1 клик</a>
+                <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
             </div>
           </div>
@@ -378,10 +382,10 @@
         <div class="product__top">
           <p class="product__title product__title--icon2">Акции</p>
           <a href="#" class="product__link">Смотреть все</a>
-          <div class="swiper-button-prev product__prev"></div>
-          <div class="swiper-button-next product__next"></div>
+          <div class="swiper-button-prev product__prev product__prev--02"></div>
+          <div class="swiper-button-next product__next product__next--02"></div>
         </div>
-        <div class="swiper-container product__slider">
+        <div class="swiper-container product__slider product__slider--02">
           <div class="swiper-wrapper">
             <div class="swiper-slide product__slide">
               <figure class="catalog__img">
@@ -555,10 +559,10 @@
         <div class="product__top">
           <p class="product__title product__title--icon3">Хит продаж</p>
           <a href="#" class="product__link">Смотреть все</a>
-          <div class="swiper-button-prev product__prev"></div>
-          <div class="swiper-button-next product__next"></div>
+          <div class="swiper-button-prev product__prev product__prev--03"></div>
+          <div class="swiper-button-next product__next product__next--03"></div>
         </div>
-        <div class="swiper-container product__slider">
+        <div class="swiper-container product__slider product__slider--03">
           <div class="swiper-wrapper">
             <div class="swiper-slide product__slide">
               <figure class="catalog__img">
@@ -853,7 +857,7 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="footer__top">
-        <div class="footer__block">
+        <div class="footer__block footer__block--about">
           <p class="title-3">О нас</p>
           <p>Какой-нибудь текст о компании.Какой-нибудь текст о компании. Какой-нибудь текст о компании. Какой-нибудь текст о компании.</p>
           <div class="payment">
@@ -861,7 +865,7 @@
             <img src="img/images/mastercard.png" alt="MasterCard">
           </div>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--shop">
           <p class="title-3 footer__title--btn">Магазин</p>
           <ul class="footer__list">
             <li class="footer__item"><a href="#">Приборные панели</a></li>
@@ -872,7 +876,7 @@
             <li class="footer__item"><a href="#">Перейти в каталог</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--info">
           <p class="title-3 footer__title--btn">Информация</p>
           <ul class="footer__list">
             <li class="footer__item"><a href="#">Скидки</a></li>
@@ -883,7 +887,7 @@
             <li class="footer__item"><a href="#">Доставка</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--contacts">
           <p class="title-3">Контакты</p>
           <div class="block-address">
             <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -897,7 +901,7 @@
               <use href="#icon-phone"></use>
             </svg>
             <a href="tel:+71234567890" class="block-phone__call">+7 123 456 78 90</a>
-            <a href="#" class="block-phone__order">Заказать звонок</a>
+            <a data-fancybox="" data-src="#order" href="javascript:;" class="block-phone__order">Заказать звонок</a>
           </div>
           <a href="mailto:email@email.ru" class="block-link">
             <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
@@ -948,7 +952,7 @@
   
   <a href="#" class="btn-top" title="Наверх"></a>
   
-  <!-- Modal window -->
+  <!-- Modal windows -->
   <div style="display: none;" id="call" class="modal">
     <p class="title-2">АВТОРИЗАЦИЯ</p>
     <form action="#" method="post" class="modal__form">
@@ -957,6 +961,29 @@
       <a href="#" class="modal__link">Забыли пароль?</a>
       <button type="submit" class="btn modal__btn">ВОЙТИ</button>
       <p class="modal__comment">Если у вас нет аккаунта, <a href="#">зарегистрируйтесь</a></p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="order" class="modal">
+    <p class="title-2">Заказать звонок</p>
+    <form action="#" method="post" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Ваше имя">
+      <input type="tel" class="modal__input" placeholder="Ваш телефон">
+      <button type="submit" class="btn modal__btn">ВОЙТИ</button>
+      <p class="modal__comment">Если у вас нет аккаунта, <a href="#">зарегистрируйтесь</a></p>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="click" class="modal modal--click">
+    <p class="title-2">КУПИТЬ В ОДИН КЛИК</p>
+    <form action="#" method="post" class="modal__form">
+      <label for="fio" class="modal__label">ФИО или название компании<span>*</span></label>
+      <input type="text" id="fio" class="modal__input" required="">
+      <label for="phones" class="modal__label">Контактные телефоны (с кодом города)<span>*</span></label>
+      <input type="text" id="phones" class="modal__input" required="">
+      <button type="submit" class="btn modal__btn">КУПИТЬ</button>
+      <p class="modal__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+      <p class="modal__comment"><span>*</span> — Поля, обязательные для заполнения</p>
     </form>
   </div>
   
@@ -985,16 +1012,73 @@
       preventClicksPropagation: false,
     });
     
-    var mySwiper = new Swiper ('.product__slider', {
+    var mySwiper = new Swiper ('.product__slider--01', {
       navigation: {
-        nextEl: '.product__next',
-        prevEl: '.product__prev',
+        nextEl: '.product__next--01',
+        prevEl: '.product__prev--01',
       },
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
       slidesPerView: 4,
       spaceBetween: 20,
+      breakpoints: {
+        1210: {
+          slidesPerView: 3,
+        },
+        1022: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
+    });
+    
+    var mySwiper = new Swiper ('.product__slider--02', {
+      navigation: {
+        nextEl: '.product__next--02',
+        prevEl: '.product__prev--02',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 4,
+      spaceBetween: 20,
+      breakpoints: {
+        1210: {
+          slidesPerView: 3,
+        },
+        1022: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
+    });
+    
+    var mySwiper = new Swiper ('.product__slider--03', {
+      navigation: {
+        nextEl: '.product__next--03',
+        prevEl: '.product__prev--03',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 4,
+      spaceBetween: 20,
+      breakpoints: {
+        1210: {
+          slidesPerView: 3,
+        },
+        1022: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        },
+      },
     });
     
     var mySwiper = new Swiper ('.brand__slider', {
