@@ -113,6 +113,8 @@
 }
 
 .catalog__img {
+  position: relative;
+  z-index: 5;
   width: 100%;
   overflow: hidden;
   
@@ -129,10 +131,27 @@
     .transition();
   }
   
+  &::before {
+    content: "Подробнее";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(0, 102, 176, 0.75);
+    pointer-events: none;
+    opacity: 0;
+    .transition();
+  }
+  
   &:hover,
   &:active {
-    img {
-      transform: scale(1.05);
+    &::before {
+      opacity: 1;
       .transition();
     }
   }
