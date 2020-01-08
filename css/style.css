@@ -3125,6 +3125,8 @@ span.pages__link {
   opacity: 1;
 }
 .catalog__img {
+  position: relative;
+  z-index: 5;
   width: 100%;
   overflow: hidden;
 }
@@ -3146,10 +3148,27 @@ span.pages__link {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.catalog__img:hover img,
-.catalog__img:active img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.catalog__img::before {
+  content: "Подробнее";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgba(0, 102, 176, 0.75);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.catalog__img:hover::before,
+.catalog__img:active::before {
+  opacity: 1;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
