@@ -25,6 +25,11 @@
     <symbol id="icon-mail">
       <path d="M226.735,1.636C111.259,14.518,17.472,106.202,2.285,221.396c-21.518,163.24,111.938,302.116,273.589,289.849    c59.464-4.513,115.124-31.086,158.736-71.759l3.746-3.492c4.309-4.018,4.544-10.768,0.526-15.076l-14.555-15.607    c-4.018-4.309-10.767-4.544-15.076-0.526l-7.803,7.277c-48.51,45.232-115.104,65.582-182.284,54.141    c-95.215-16.216-168.411-97.052-175.846-193.352C33.487,145.508,136.207,39.093,262.324,42.758    c116.288,3.381,207.009,102.616,207.009,218.953v15.622c0,24.934-21.486,44.932-46.921,42.46    C400.246,317.637,384,297.714,384,275.442v-94.108c0-5.892-4.776-10.667-10.667-10.667H352c-4.283,0-7.921,2.56-9.618,6.203    c-21.465-23.413-52.19-38.203-86.382-38.203c-64.698,0-117.333,52.635-117.333,117.333S191.302,373.334,256,373.334    c40.755,0,76.691-20.909,97.732-52.54c15.842,26.475,45.276,43.922,78.78,41.677c45.303-3.035,79.488-42.746,79.488-88.15V256    C512,105.202,380.931-15.566,226.735,1.636z M256,330.667c-41.167,0-74.667-33.5-74.667-74.667    c0-41.167,33.5-74.667,74.667-74.667c41.167,0,74.667,33.5,74.667,74.667C330.667,297.167,297.167,330.667,256,330.667z"/>
     </symbol>
+    <symbol id="icon-basket">
+      <path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
+      <path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+      <path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+    </symbol>
   </svg>
   
   <header class="header">
@@ -169,9 +174,7 @@
                     <img src="img/images/img-9.jpg" alt="MERCEDES-BENZ W124">
                   </div>
                   <div class="swiper-slide case__thumb">
-                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                      <img src="img/images/img-11.jpg" alt="MERCEDES-BENZ W124">
-                    </a>
+                    <img src="img/images/img-11.jpg" alt="MERCEDES-BENZ W124">
                   </div>
                   <div class="swiper-slide case__thumb">
                     <img src="img/images/img-10.jpg" alt="MERCEDES-BENZ W124">
@@ -194,27 +197,67 @@
                           <img src="img/images/img-9.jpg" alt="MERCEDES-BENZ W124">
                         </figure>
                         <div class="case__about">
-                          
+                          <div class="case__order">
+                            <form action="#" class="case__form">
+                              <p class="title-3 case__title">Заказ товара</p>
+                              <p class="case__oldprice">1350 руб.</p>
+                              <p class="case__newprice">1230 руб.</p>
+                              <div class="case__btns">
+                                <div class="catalog__increase">
+                                  <button type="button" class="catalog__minus">-</button>
+                                  <input type="text" class="catalog__value" value="1">
+                                  <button type="button" class="catalog__plus">+</button>
+                                </div>
+                                <button type="submit" class="btn case__btn">
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -31 512.00026 512" width="512px">
+                                    <use href="#icon-basket"></use>
+                                  </svg>
+                                  <span>В корзину</span>
+                                </button>
+                              </div>
+                              <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide case__slide">
-                    <a href="#" class="case__img">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="case__img case__img--video">
                       <img src="img/images/img-11.jpg" alt="MERCEDES-BENZ W124">
                     </a>
                   </div>
                   <div class="swiper-slide case__slide">
-                    <a data-fancybox data-src="#hidden-content1" href="javascript:;" class="case__img">
+                    <a data-fancybox data-src="#hidden-content2" href="javascript:;" class="case__img">
                       <img src="img/images/img-10.jpg" alt="MERCEDES-BENZ W124">
                     </a>
-                    <div style="display: none;" id="hidden-content1" class="case__hidden">
+                    <div style="display: none;" id="hidden-content2" class="case__hidden">
                       <div class="case__internal">
                         <figure class="case__pic">
-                          <img src="img/images/img-12.jpg" alt="MERCEDES-BENZ W124">
+                          <img src="img/images/img-10.jpg" alt="MERCEDES-BENZ W124">
                         </figure>
                         <div class="case__about">
-                          
+                          <div class="case__order">
+                            <form action="#" class="case__form">
+                              <p class="title-3 case__title">Заказ товара</p>
+                              <p class="case__oldprice">1350 руб.</p>
+                              <p class="case__newprice">1230 руб.</p>
+                              <div class="case__btns">
+                                <div class="catalog__increase">
+                                  <button type="button" class="catalog__minus">-</button>
+                                  <input type="text" class="catalog__value" value="1">
+                                  <button type="button" class="catalog__plus">+</button>
+                                </div>
+                                <button type="submit" class="btn case__btn">
+                                  <svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -31 512.00026 512" width="512px">
+                                    <use href="#icon-basket"></use>
+                                  </svg>
+                                  <span>В корзину</span>
+                                </button>
+                              </div>
+                              <a data-fancybox data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -242,10 +285,8 @@
                   </div>
                   <button type="submit" class="btn case__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -31 512.00026 512" width="512px">
-                    <path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
-                    <path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-                    <path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
-                  </svg>
+                      <use href="#icon-basket"></use>
+                    </svg>
                     <span>В корзину</span>
                   </button>
                 </div>
@@ -265,8 +306,46 @@
         <li class="info__name"><a href="#info-4">Отзывы</a></li>
       </ul>
       <div class="info__wrap">
-        <div class="info__field" id="info-1">
-
+        <div class="info__field info__list" id="info-1">
+          <p>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</p>
+          <ul>
+            <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
+            <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
+            <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
+          </ul>
+          
+          <p class="title-3">Технические характеристики</p>
+          <table>
+            <tr>
+              <td>Мощность, Вт</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Напряжение, В</td>
+              <td>220</td>
+            </tr>
+            <tr>
+              <td>Диаметр диска, мм</td>
+              <td>125</td>
+            </tr>
+            <tr>
+              <td>Возможность подключения к пылесосу</td>
+              <td>да</td>
+            </tr>
+            <tr>
+              <td>Диаметр патрубка пылесоса, мм</td>
+              <td>19</td>
+            </tr>
+          </table>
+          
+          <p class="title-3">Дополнительная информация</p>
+          <p>Видео информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Видео информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</p>
+          <div class="info__video">
+            <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+              <img src="img/images/img-6.jpg" alt="MERCEDES-BENZ W124">
+            </a>
+          </div>
+          <a href="#" class="info__docs" download>Скачать инструкцию</a>
         </div>
         <div class="info__field" id="info-2">
           Гарантия и ремонт
@@ -276,7 +355,6 @@
         </div>
         <div class="info__field" id="info-4">
           <form action="#" method="post" class="review">
-            <p class="review__title"><span>Отзывы</span></p>
             <ul class="review__list">
               <li class="review__item">
                 <p class="review__name">Иван Иванов</p>
@@ -309,7 +387,7 @@
               <input type="text" id="code" class="review__input">
               <img src="img/comments02267.jpg" alt="" width="160" height="80">
             </fieldset>
-            <button class="btn-grey review__btn">Отправить</button>
+            <button class="btn review__btn">Отправить</button>
             <p class="review__comment"><span>*</span> — Поля, обязательные для заполнения</p>
             <p class="review__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.</p>
           </form>
@@ -339,7 +417,7 @@
       </div>
     </section>
     
-    <section class="product">
+    <section class="product product--related">
       <div class="wrapper">
         <div class="product__top">
           <p class="product__title product__title--icon1">Рекомендуемые товары</p>
