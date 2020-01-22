@@ -169,6 +169,12 @@
       font-size: 13px;
     }
   }
+  .header__logout,
+  .header__page {
+    span {
+      display: none;
+    }
+  }
 }
 
 //-------------------------------
@@ -354,6 +360,9 @@
     text-align: center;
     margin-top: 0;
     width: 100%;
+  }
+  .header__page {
+    margin-left: auto;
   }
 }
 
@@ -697,6 +706,17 @@
     
     &::after {
       display: none;
+    }
+  }
+  .header__logout,
+  .header__page {
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    span {
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }
