@@ -396,7 +396,7 @@ textarea {
 body {
   width: 100%;
   max-width: 100%;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -5060,7 +5060,7 @@ input.cart__change {
   width: 100px;
 }
 .aside__price {
-  font-weight: 600;
+  font-weight: 500;
 }
 .aside__btns {
   position: relative;
@@ -5086,7 +5086,6 @@ input.cart__change {
 .aside__number {
   width: 50px;
   font-size: 16px;
-  font-weight: 600;
   text-align: center;
   color: #0066b0;
   background-color: rgba(255, 255, 255, 0);
