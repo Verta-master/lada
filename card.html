@@ -307,90 +307,102 @@
       </ul>
       <div class="info__wrap">
         <div class="info__field info__list" id="info-1">
-          <p>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</p>
-          <ul>
-            <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
-            <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
-            <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
-          </ul>
-          
-          <p class="title-3">Технические характеристики</p>
-          <table>
-            <tr>
-              <td>Мощность, Вт</td>
-              <td>300</td>
-            </tr>
-            <tr>
-              <td>Напряжение, В</td>
-              <td>220</td>
-            </tr>
-            <tr>
-              <td>Диаметр диска, мм</td>
-              <td>125</td>
-            </tr>
-            <tr>
-              <td>Возможность подключения к пылесосу</td>
-              <td>да</td>
-            </tr>
-            <tr>
-              <td>Диаметр патрубка пылесоса, мм</td>
-              <td>19</td>
-            </tr>
-          </table>
-          
-          <p class="title-3">Дополнительная информация</p>
-          <p>Видео информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Видео информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</p>
-          <div class="info__video">
-            <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-              <img src="img/images/img-6.jpg" alt="MERCEDES-BENZ W124">
-            </a>
-          </div>
-          <a href="#" class="info__docs" download>Скачать инструкцию</a>
-        </div>
-        <div class="info__field" id="info-2">
-          Гарантия и ремонт
-        </div>
-        <div class="info__field" id="info-3">
-          Доставка и оплата
-        </div>
-        <div class="info__field" id="info-4">
-          <form action="#" method="post" class="review">
-            <ul class="review__list">
-              <li class="review__item">
-                <p class="review__name">Иван Иванов</p>
-                <time datetime="2018-09-05">05.09.2018</time>
-                <div class="review__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
-                </div>
-              </li>
-              <li class="review__item">
-                <p class="review__name">Иван Иванов</p>
-                <time datetime="2018-09-05">05.09.2018</time>
-                <div class="review__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
-                </div>
-              </li>
+          <button type="button" class="info__btn">Описание</button>
+          <div class="info__drop info__drop--open">
+            <p>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</p>
+            <ul>
+              <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
+              <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
+              <li>Подробная информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</li>
             </ul>
 
-            <p class="review__subtitle">НАПИСАТЬ ОТЗЫВ</p>
-            <label for="person" class="review__label">Имя<span>*</span></label>
-            <input type="text" id="person" class="review__input" required>
-            <textarea class="review__message"></textarea>
-            <fieldset class="review__field">
-              <label for="email" class="review__label">Подписаться на комментарии (впишите e-mail):</label>
-              <input type="email" id="email" class="review__input">
-            </fieldset>
-            <fieldset class="review__field review__field--captcha">
-              <label for="code" class="review__label">Введите код с картинки:</label>
-              <input type="text" id="code" class="review__input">
-              <img src="img/comments02267.jpg" alt="" width="160" height="80">
-            </fieldset>
-            <button class="btn review__btn">Отправить</button>
-            <p class="review__comment"><span>*</span> — Поля, обязательные для заполнения</p>
-            <p class="review__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.</p>
-          </form>
+            <p class="title-3">Технические характеристики</p>
+            <table>
+              <tr>
+                <td>Мощность, Вт</td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td>Напряжение, В</td>
+                <td>220</td>
+              </tr>
+              <tr>
+                <td>Диаметр диска, мм</td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <td>Возможность подключения к пылесосу</td>
+                <td>да</td>
+              </tr>
+              <tr>
+                <td>Диаметр патрубка пылесоса, мм</td>
+                <td>19</td>
+              </tr>
+            </table>
+
+            <p class="title-3">Дополнительная информация</p>
+            <p>Видео информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств. Видео информация о товаре, описание его характеристик, технических параметров и эксплуатационных достоинств.</p>
+            <div class="info__video">
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                <img src="img/images/img-6.jpg" alt="MERCEDES-BENZ W124">
+              </a>
+            </div>
+            <a href="#" class="info__docs" download>Скачать инструкцию</a>
+          </div>
+        </div>
+        <div class="info__field" id="info-2">
+          <button type="button" class="info__btn">Гарантия и ремонт</button>
+          <div class="info__drop">
+            Гарантия и ремонт
+          </div>
+        </div>
+        <div class="info__field" id="info-3">
+          <button type="button" class="info__btn">Доставка и оплата</button>
+          <div class="info__drop">
+            Доставка и оплата
+          </div>
+        </div>
+        <div class="info__field" id="info-4">
+          <button type="button" class="info__btn">Отзывы</button>
+          <div class="info__drop">
+            <form action="#" method="post" class="review">
+              <ul class="review__list">
+                <li class="review__item">
+                  <p class="review__name">Иван Иванов</p>
+                  <time datetime="2018-09-05">05.09.2018</time>
+                  <div class="review__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+                  </div>
+                </li>
+                <li class="review__item">
+                  <p class="review__name">Иван Иванов</p>
+                  <time datetime="2018-09-05">05.09.2018</time>
+                  <div class="review__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="review__subtitle">НАПИСАТЬ ОТЗЫВ</p>
+              <label for="person" class="review__label">Имя<span>*</span></label>
+              <input type="text" id="person" class="review__input" required>
+              <textarea class="review__message"></textarea>
+              <fieldset class="review__field">
+                <label for="email" class="review__label">Подписаться на комментарии (впишите e-mail):</label>
+                <input type="email" id="email" class="review__input">
+              </fieldset>
+              <fieldset class="review__field review__field--captcha">
+                <label for="code" class="review__label">Введите код с картинки:</label>
+                <input type="text" id="code" class="review__input">
+                <img src="img/comments02267.jpg" alt="" width="160" height="80">
+              </fieldset>
+              <button class="btn review__btn">Отправить</button>
+              <p class="review__comment"><span>*</span> — Поля, обязательные для заполнения</p>
+              <p class="review__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>.</p>
+            </form>
+          </div>
         </div>
       
         <aside class="aside">
@@ -777,6 +789,11 @@
         766: {
           direction: 'horizontal',
         },
+        480: {
+          direction: 'horizontal',
+          slidesPerView: 3,
+          spaceBetween: 10,
+        }
       },
     });
     
@@ -824,6 +841,11 @@
     if (window.innerWidth < 767) {
       $(document).ready(function() { 
         $('.ui-tabs').tabs('destroy');
+      });
+      
+      $('.info__btn').click(function() {
+        $(this).next().slideToggle();
+        $(this).next().removeClass('info__drop--open');
       });
     }
   </script>
