@@ -26,5 +26,76 @@
 }
 
 .aside__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside__img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+
+.aside__buy {
+  width: 100px;
+}
+
+.aside__price {
+  font-weight: 600;
+}
+
+.aside__btns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid @blue;
+    transform: skewX(-15deg);
+  }
+}
+
+.aside__number {
+  width: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: @blue;
+  background-color: rgba(255,255,255,0);
+}
+
+.aside__btn {
+  width: 50px;
+  
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    svg {
+      fill: @blue;
+      .transition();
+    }
+  }
 }
