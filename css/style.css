@@ -485,7 +485,7 @@ h6,
 .title-1,
 .title-2,
 .title-3 {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -633,7 +633,7 @@ h3,
   margin-bottom: 5px;
   font-size: 20px;
   line-height: 1;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   text-decoration: none;
   -webkit-transition: ease-out 0.3s;
@@ -924,7 +924,7 @@ h3,
   display: block;
   padding-top: 18px;
   padding-bottom: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
@@ -1202,7 +1202,7 @@ h3,
   max-width: 90%;
   margin: 0;
   padding: 15px 25px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1244,7 +1244,7 @@ h3,
   position: relative;
   margin: 0;
   margin-right: 30px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2348,7 +2348,7 @@ a.breadcrumbs__link::after {
 }
 .gallery__title a {
   display: block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
@@ -2635,7 +2635,7 @@ a.breadcrumbs__link::after {
           flex-grow: 1;
 }
 .tabs__head {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.2;
@@ -2699,7 +2699,7 @@ a.breadcrumbs__link::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1;
   text-decoration: none;
@@ -2942,7 +2942,7 @@ span.pages__link {
 }
 .sidebar__title {
   margin-top: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   letter-spacing: 0.05em;
   font-size: 20px;
@@ -3251,7 +3251,7 @@ span.pages__link {
 .catalog__name {
   display: block;
   margin-bottom: 30px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -5010,6 +5010,9 @@ input.cart__change {
   padding-left: 20px;
   border-left: 1px solid #f1f1f1;
 }
+.aside .title-3 {
+  letter-spacing: normal;
+}
 .aside__list {
   margin: 0;
   padding: 0;
@@ -5109,6 +5112,24 @@ input.cart__change {
   fill: #0066b0;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.catalog__price,
+.product__link {
+  font-weight: 400;
+}
+.menu__link,
+.title-1,
+.title-2,
+.title-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.product__title,
+.catalog__name {
+  letter-spacing: normal;
 }
 @media (max-width: 1210px) {
   .gallery-top {
