@@ -4744,7 +4744,7 @@ input.cart__change {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #f2f2f2;
   overflow: hidden;
 }
@@ -5023,4 +5023,87 @@ input.cart__change {
 .aside__title:active {
   color: #0066b0;
   text-decoration: underline;
+}
+.aside__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aside__img {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.aside__img img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-height: 100%;
+}
+.aside__buy {
+  width: 100px;
+}
+.aside__price {
+  font-weight: 600;
+}
+.aside__btns {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aside__btns::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid #0066b0;
+  -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg);
+}
+.aside__number {
+  width: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #0066b0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.aside__btn {
+  width: 50px;
+}
+.aside__btn svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.aside__btn:hover svg,
+.aside__btn:active svg {
+  fill: #0066b0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
