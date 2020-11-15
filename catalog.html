@@ -157,6 +157,64 @@
     
     <div class="wrapper wrapper--columns wrapper--catalog">
       <div class="sidebar">
+        <p class="sidebar__nav">Категории</p>
+        <ul class="sidebar__navlist">
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Лада</a>
+            <div class="sidebar__sublist">
+              <ul class="sidebar__subnav">
+                <li>
+                  <a href="#" class="sidebar__link">Комплект №1</a>
+                  <div class="sidebar__sublist">
+                    <ul class="sidebar__subnav">
+                      <li><a href="#">Option 1</a></li>
+                      <li><a href="#">Option 2</a></li>
+                      <li><a href="#">Option 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="sidebar__link">Комплект №2</a>
+                  <div class="sidebar__sublist">
+                    <ul class="sidebar__subnav">
+                      <li><a href="#">Option 1</a></li>
+                      <li><a href="#">Option 2</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="sidebar__link">Комплект №3</a>
+                  <div class="sidebar__sublist">
+                    <ul class="sidebar__subnav">
+                      <li><a href="#">Option 1</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Интерьер</a>
+            <div class="sidebar__sublist">
+              <ul class="sidebar__subnav">
+                <li><a href="#">Комплект №1</a></li>
+                <li><a href="#">Комплект №2</a></li>
+                <li><a href="#">Комплект №3</a></li>
+                <li><a href="#">Комплект №4</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Пункт 3</a>
+            <div class="sidebar__sublist">
+              <ul class="sidebar__subnav">
+                <li><a href="#">Комплект №1</a></li>
+                <li><a href="#">Комплект №2</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        
         <p class="sidebar__title">Подбор по параметрам</p>
         <form action="#" method="get" class="sidebar__filter">
           <ul class="sidebar__list">
@@ -624,6 +682,12 @@
       $('.sidebar__title').click(function(evt) {
         evt.preventDefault();
         $('.sidebar__filter').slideToggle();
+      })
+    };
+    if (window.innerWidth < 1022) {
+      $('.sidebar__nav').click(function(evt) {
+        evt.preventDefault();
+        $('.sidebar__navlist').slideToggle();
       })
     };
   </script>
