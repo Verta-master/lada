@@ -5329,10 +5329,14 @@ h6,
   font-size: 20px;
   text-transform: uppercase;
 }
+.sidebar__item {
+  position: relative;
+}
 .sidebar__subnav {
   padding-left: 20px;
 }
 .sidebar__subnav li {
+  position: relative;
   margin-bottom: 5px;
 }
 .sidebar__subnav li a {
@@ -5344,8 +5348,48 @@ h6,
 .sidebar__subnav li a:active {
   text-decoration: underline;
 }
-.sidebar__subnav .sidebar__link::after {
-  top: 3px;
+.sidebar__navlink {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__navlink:hover,
+.sidebar__navlink:active {
+  color: #0066b0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__navbtn {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: -5px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/next-grey.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__navbtn:hover,
+.sidebar__navbtn:active {
+  background-image: url(../img/icons/next-blue.svg);
+}
+.sidebar__navbtn--open {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 @media (max-width: 1022px) {
   .sidebar__nav {

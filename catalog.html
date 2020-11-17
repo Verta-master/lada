@@ -160,11 +160,13 @@
         <p class="sidebar__nav">Категории</p>
         <ul class="sidebar__navlist">
           <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Лада</a>
+            <a href="#" class="sidebar__navlink">Лада</a>
+            <button type="button" class="sidebar__navbtn"></button>
             <div class="sidebar__sublist">
               <ul class="sidebar__subnav">
                 <li>
-                  <a href="#" class="sidebar__link">Комплект №1</a>
+                  <a href="#" class="sidebar__navlink">Комплект №1</a>
+                  <button type="button" class="sidebar__navbtn"></button>
                   <div class="sidebar__sublist">
                     <ul class="sidebar__subnav">
                       <li><a href="#">Option 1</a></li>
@@ -174,7 +176,8 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#" class="sidebar__link">Комплект №2</a>
+                  <a href="#" class="sidebar__navlink">Комплект №2</a>
+                  <button type="button" class="sidebar__navbtn"></button>
                   <div class="sidebar__sublist">
                     <ul class="sidebar__subnav">
                       <li><a href="#">Option 1</a></li>
@@ -183,7 +186,8 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#" class="sidebar__link">Комплект №3</a>
+                  <a href="#" class="sidebar__navlink">Комплект №3</a>
+                  <button type="button" class="sidebar__navbtn"></button>
                   <div class="sidebar__sublist">
                     <ul class="sidebar__subnav">
                       <li><a href="#">Option 1</a></li>
@@ -194,7 +198,8 @@
             </div>
           </li>
           <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Интерьер</a>
+            <a href="#" class="sidebar__navlink">Интерьер</a>
+            <button type="button" class="sidebar__navbtn"></button>
             <div class="sidebar__sublist">
               <ul class="sidebar__subnav">
                 <li><a href="#">Комплект №1</a></li>
@@ -205,7 +210,8 @@
             </div>
           </li>
           <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Пункт 3</a>
+            <a href="#" class="sidebar__navlink">Пункт 3</a>
+            <button type="button" class="sidebar__navbtn"></button>
             <div class="sidebar__sublist">
               <ul class="sidebar__subnav">
                 <li><a href="#">Комплект №1</a></li>
@@ -690,6 +696,10 @@
         $('.sidebar__navlist').slideToggle();
       })
     };
+    $('.sidebar__navbtn').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('sidebar__navbtn--open');
+    })
   </script>
   
   <!-- Catalog plate or table view -->
