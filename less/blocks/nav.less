@@ -19,10 +19,15 @@
   text-transform: uppercase;
 }
 
+.sidebar__item {
+  position: relative;
+}
+
 .sidebar__subnav {
   padding-left: 20px;
   
   li {
+    position: relative;
     margin-bottom: 5px;
     
     a {
@@ -36,9 +41,47 @@
       }
     }
   }
+}
+
+.sidebar__navlink {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+  .transition();
   
-  .sidebar__link::after {
-    top: 3px;
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+  }
+}
+
+.sidebar__navbtn {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: -5px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/next-grey.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+  transform: rotate(90deg);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-image: url(../img/icons/next-blue.svg);
+  }
+  
+  &--open {
+    transform: rotate(-90deg);
+    .transition();
   }
 }
 
