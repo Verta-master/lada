@@ -1,0 +1,63 @@
+	<p class="sidebar__nav">Категории</p>
+        <ul class="sidebar__navlist">
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__navlink">Лада</a>
+            <button type="button" class="sidebar__navbtn"></button>
+            <div class="sidebar__sublist">
+              <ul class="sidebar__subnav">
+                <li>
+                  <a href="#" class="sidebar__navlink">Комплект №1</a>
+                  <button type="button" class="sidebar__navbtn"></button>
+                  <div class="sidebar__sublist">
+                    <ul class="sidebar__subnav">
+                      <li><a href="#">Option 1</a></li>
+                      <li><a href="#">Option 2</a></li>
+                      <li><a href="#">Option 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="sidebar__navlink">Комплект №2</a>
+                  <button type="button" class="sidebar__navbtn"></button>
+                  <div class="sidebar__sublist">
+                    <ul class="sidebar__subnav">
+                      <li><a href="#">Option 1</a></li>
+                      <li><a href="#">Option 2</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="sidebar__navlink">Комплект №3</a>
+                  <button type="button" class="sidebar__navbtn"></button>
+                  <div class="sidebar__sublist">
+                    <ul class="sidebar__subnav">
+                      <li><a href="#">Option 1</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__navlink">Интерьер</a>
+            <button type="button" class="sidebar__navbtn"></button>
+            <div class="sidebar__sublist">
+              <ul class="sidebar__subnav">
+                <li><a href="#">Комплект №1</a></li>
+                <li><a href="#">Комплект №2</a></li>
+                <li><a href="#">Комплект №3</a></li>
+                <li><a href="#">Комплект №4</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__navlink">Пункт 3</a>
+            <button type="button" class="sidebar__navbtn"></button>
+            <div class="sidebar__sublist">
+              <ul class="sidebar__subnav">
+                <li><a href="#">Комплект №1</a></li>
+                <li><a href="#">Комплект №2</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>

@@ -1,0 +1,10 @@
+1) Заменить разметку для боового меню в секции sidebar__navbtn
+
+2) Добавить в скрипты вницу страницы:
+	
+	$('.sidebar__navbtn').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('sidebar__navbtn--open');
+    })
+	
+3) Заменить стили для бокового меню
