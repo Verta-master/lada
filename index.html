@@ -5,7 +5,7 @@
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Lada Engineering</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,500&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -40,7 +40,7 @@
         <div class="header__line">
           <ul class="header__menu">
             <li class="header__item"><a href="#">Скидки</a></li>
-            <li class="header__item header__item--active"><a href="#">Новинки</a></li>
+            <li class="header__item"><a href="#">Новинки</a></li>
             <li class="header__item"><a href="#">Как купить</a></li>
             <li class="header__item"><a href="#">Гарантия</a></li>
             <li class="header__item"><a href="news.html">Блог</a></li>
@@ -135,21 +135,6 @@
             </ul>
           </div>
         </li>
-        <li class="menu__item menu__item--active">
-          <a href="#" class="menu__link">Оплата</a>
-        </li>
-        <li class="menu__item">
-          <a href="delivery.html" class="menu__link">Доставка</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">О компании</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Партнеры</a>
-        </li>
-        <li class="menu__item">
-          <a href="contacts.html" class="menu__link">Контакты</a>
-        </li>
       </ul>
       <form action="#" class="search">
         <input type="text" class="search__input" placeholder="Найти товары">
@@ -203,12 +188,32 @@
         </div>
         
         <div class="promo__banners">
-          <a href="#" class="promo__banner" style="background-image:url('img/images/img-1.jpg');">
-            <p class="promo__category">Колеса и диски</p>
-          </a>
-          <a href="#" class="promo__banner" style="background-image:url('img/images/img-2.jpg');">
-            <p class="promo__category">Аксессуары и<br>дополнительное оборудование</p>
-          </a>
+          <div class="swiper-container promo__mini">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="promo__sale">
+                  <figure class="promo__img">
+                    <img src="img/images/img-10.jpg" alt="Акции">
+                  </figure>
+                  <p class="promo__text">Текст акции</p>
+                  <span class="btn btn--border promo__btn">Акции</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="promo__sale">
+                  <figure class="promo__img">
+                    <img src="img/images/img-11.jpg" alt="Скидки">
+                  </figure>
+                  <p class="promo__text">Текст акции</p>
+                  <span class="btn btn--border promo__btn">Скидки</span>
+                </a>
+              </div>
+            </div>
+            <div class="promo__control">
+              <div class="swiper-button-prev promo__prev promo__prev--02"></div>
+              <div class="swiper-button-next promo__next promo__next--02"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -240,12 +245,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -267,12 +267,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -294,12 +289,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -321,12 +311,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -348,12 +333,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -375,12 +355,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a data-fancybox="" data-src="#click" href="javascript:;" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -417,12 +392,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -444,12 +414,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -471,12 +436,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -498,12 +458,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -525,12 +480,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -552,12 +502,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -594,12 +539,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -621,12 +561,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -648,12 +583,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -675,12 +605,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -702,12 +627,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -729,12 +649,7 @@
                   <p class="catalog__price"><span>1230</span> руб.</p>
                 </div>
                 <div class="catalog__buy">
-                  <div class="catalog__increase">
-                    <button type="button" class="catalog__minus"><span>-</span></button>
-                    <input type="text" class="catalog__value" value="1">
-                    <button type="button" class="catalog__plus"><span>+</span></button>
-                  </div>
-                  <button type="button" class="btn catalog__btn">Купить</button>
+                  <button type="button" class="btn btn--border catalog__btn">Купить</button>
                 </div>
                 <a href="#" class="catalog__click">Купить в 1 клик</a>
               </form>
@@ -1022,6 +937,16 @@
       loop: true,
       speed: 2500,
       effect: 'fade',
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.promo__mini', {
+      navigation: {
+        nextEl: '.promo__next--02',
+        prevEl: '.promo__prev--02',
+      },
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,

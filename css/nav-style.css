@@ -1,0 +1,114 @@
+.sidebar__subnav,
+.sidebar__navlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar__navlist {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.sidebar__nav {
+  margin-top: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.sidebar__item {
+  position: relative;
+}
+.sidebar__subnav {
+  padding-left: 20px;
+}
+.sidebar__subnav li {
+  position: relative;
+  margin-bottom: 5px;
+}
+.sidebar__subnav li a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+}
+.sidebar__subnav li a:hover,
+.sidebar__subnav li a:active {
+  text-decoration: underline;
+}
+.sidebar__navlink {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-right: 30px;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__navlink:hover,
+.sidebar__navlink:active {
+  color: #0066b0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__navbtn {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: -5px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/next-grey.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__navbtn:hover,
+.sidebar__navbtn:active {
+  background-image: url(../img/icons/next-blue.svg);
+}
+.sidebar__navbtn--open {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+@media (max-width: 1022px) {
+  .sidebar__nav {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sidebar__nav::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    background-color: #0066b0;
+    border-radius: 2px;
+  }
+  .sidebar__navlist {
+    display: none;
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .sidebar__title {
+    margin-top: 50px;
+  }
+  .sidebar {
+    background-color: #fff;
+  }
+}
