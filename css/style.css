@@ -5482,10 +5482,12 @@ h6,
   background-color: rgba(0, 102, 176, 0.5);
 }
 .promo__slider-block {
-  width: 70%;
+  width: 80%;
+  height: 350px;
 }
 .promo__banners {
-  width: 29%;
+  width: 19%;
+  height: 350px;
   display: block;
 }
 .promo__mini {
@@ -5499,6 +5501,20 @@ h6,
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.promo__slider,
+.news__item,
+.promo__category::before,
+.search::before,
+.btn::before,
+.product__slide,
+.promo__mini,
+.promo__sale,
+.promo__link {
+  border-radius: 4px;
+}
+.news__item {
+  overflow: hidden;
 }
 .promo__sale {
   width: 100%;
@@ -5523,7 +5539,7 @@ h6,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 300px;
+  height: 150px;
   width: 100%;
 }
 .promo__img img {
@@ -5545,8 +5561,8 @@ h6,
   font-size: 22px;
 }
 @media (max-width: 1210px) {
-  .promo__img {
-    height: 250px;
+  .promo__btn {
+    max-width: 80%;
   }
 }
 @media (max-width: 1022px) {
